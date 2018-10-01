@@ -3,6 +3,8 @@
 
   :source-paths ["src-clj"]
 
+  :main pwa-clojure.main
+
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [bidi "2.1.4"]
                  [hiccup "1.0.5"]
@@ -16,8 +18,6 @@
   :plugins [[lein-ring "0.8.7"]]
 
   :clean-targets ^{:protect false} [:target-path :compile-path]
-
-  :main pwa-clojure.main
 
   :ring {:handler pwa-clojure.app/app
          :nrepl {:start? true}}
