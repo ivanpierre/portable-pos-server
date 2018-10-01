@@ -16,3 +16,4 @@ figwheel_server.log
 target
 .lein-repl-history
 figwheel_server.log
+.rebel_readline_history
